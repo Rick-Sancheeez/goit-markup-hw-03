@@ -6,6 +6,8 @@ body {
 
 ul, ol {
     list-style-type: none;
+    margin: 0;
+    padding-left: 0;
 }
 
 a {
@@ -17,6 +19,30 @@ header {
     background-color: white;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+.container { 
+max-width: 100%;
+padding-left: 15px;
+padding-right: 15px;
+margin-left: 141px; 
+margin-right: 141px;
+}
+
+header .container {
+    display: flex;               /* flex */
+    padding-top: 24px;
+    padding-bottom: 24px;
+    gap: 332px;
+    justify-content: space-between;
+    
+}
 .navigation-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -25,10 +51,21 @@ header {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    
 }
 
 .navigation-logo .logo-accent {
     color: #2e2f42;
+}
+
+nav {
+    display: flex;              /* flex */
+    gap: 76px;
+}
+
+nav ul {
+    display: flex;              /* flex*/
+    gap: 40px;
 }
 
 nav .link {
@@ -38,6 +75,7 @@ nav .link {
     letter-spacing: 0.02em;
     color: #2e2f42;
     text-decoration: none;
+    display: block;
 }
 
 nav .link:hover,
@@ -47,6 +85,7 @@ nav .link:focus {
 
 .address {
     font-style: normal;
+    display: flex;
 }
 
 .address .link {
@@ -55,12 +94,19 @@ nav .link:focus {
     letter-spacing: 0.02em;
     color: #434455;
     text-decoration: none;
+    display: block;
 }
 
 .address .link:hover,
 .address .link:focus {
     color: #404bbf;
 }
+
+.address ul {
+    display: flex; 
+    gap: 40px;
+}
+
 
 
 /* main */
@@ -75,6 +121,9 @@ nav .link:focus {
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
+    width: 496px;
+    height: 120px;
+    margin: 0 auto;
 }
 
 .button {
@@ -85,6 +134,10 @@ nav .link:focus {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    display: block;      /* block */
+    margin: 48px auto 0;
+    padding: 16px 32px;
+    border-radius: 4px;
 }
 
 .button:hover,
@@ -92,8 +145,19 @@ nav .link:focus {
     background-color: #404BBF;
 }
 
+.sec-main .container {
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+
 /* section 2 */
 
+.qualities h2 {
+    display: none;
+}
+.qualities .container {
+    padding: 120px 0;
+}
 .qualities .title {
     color: #2e2f42;
     font-weight: 500;
@@ -110,12 +174,24 @@ nav .link:focus {
     letter-spacing: 0.02em;
 }
 
+.qualities .container ul {
+    display: flex;
+    gap: 24px;
+}
+
+.qualities ul li {
+    width: calc((100%-72px)/4);
+}
 /* section "Our Team" */
 
 .our-team {
     background-color: #F4F4FD;
+    padding-bottom: 120px;
 }
 
+.our-team .container {
+    padding-top: 120px;
+}
 .our-team .title {
     color: #2e2f42;
     font-weight: 700;
@@ -124,6 +200,7 @@ nav .link:focus {
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .our-team .title-third {
@@ -147,10 +224,24 @@ nav .link:focus {
 
 .our-team li {
     background-color: white;
+    width: calc((100%-72px)/4);
+    height: 380px;
 }
 
-/* Our portfolio */
+.our-team .list {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
 
+.our-team .li-image {
+    margin-bottom: 32px;
+}
+/* Our portfolio */
+.portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 .portfolio .title {
     color: #2e2f42;
     font-weight: 700;
@@ -159,6 +250,18 @@ nav .link:focus {
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.portfolio ul {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 48px;
+}
+
+.portfolio ul li {
+    width: calc((100%-48px)/3);
 }
 
 .portfolio .title-third {
