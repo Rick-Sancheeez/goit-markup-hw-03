@@ -17,6 +17,7 @@ a {
 
 header {
     background-color: white;
+    border-bottom: 1px solid #e7e9fc;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -37,10 +38,11 @@ margin-right: 141px;
 
 header .container {
     display: flex;               /* flex */
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 0 15px;
     gap: 332px;
     justify-content: space-between;
+    margin: 0 auto;
+    width: 1158px;
     
 }
 .navigation-logo {
@@ -51,6 +53,7 @@ header .container {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
     
 }
 
@@ -61,11 +64,13 @@ header .container {
 nav {
     display: flex;              /* flex */
     gap: 76px;
+    align-items: center;
 }
 
 nav ul {
     display: flex;              /* flex*/
     gap: 40px;
+    padding: 24px 0;
 }
 
 nav .link {
@@ -76,6 +81,7 @@ nav .link {
     color: #2e2f42;
     text-decoration: none;
     display: block;
+    padding: 24px 0;
 }
 
 nav .link:hover,
@@ -86,6 +92,7 @@ nav .link:focus {
 .address {
     font-style: normal;
     display: flex;
+    
 }
 
 .address .link {
@@ -95,6 +102,7 @@ nav .link:focus {
     color: #434455;
     text-decoration: none;
     display: block;
+    padding: 24px 0;
 }
 
 .address .link:hover,
@@ -112,6 +120,7 @@ nav .link:focus {
 /* main */
 .sec-main {
     background-color: #2E2F42;
+    padding: 188px 0;
 }
 
 .sec-main .title {
@@ -124,6 +133,7 @@ nav .link:focus {
     width: 496px;
     height: 120px;
     margin: 0 auto;
+    max-width: 496px; 
 }
 
 .button {
@@ -138,6 +148,9 @@ nav .link:focus {
     margin: 48px auto 0;
     padding: 16px 32px;
     border-radius: 4px;
+    min-width: 169px;
+    height: 56px;
+    border: none;
 }
 
 .button:hover,
@@ -152,12 +165,13 @@ nav .link:focus {
 
 /* section 2  Qualities  */
 
-.qualities h2 {
-    display: none;
-}
-.qualities .container {
+.qualities {
     padding: 120px 0;
 }
+.visually-hidden {
+    display: none;
+}
+
 .qualities .title {
     color: #2e2f42;
     font-weight: 500;
@@ -175,7 +189,7 @@ nav .link:focus {
     letter-spacing: 0.02em;
 }
 
-.qualities .container ul {
+.qualities .container .ul-list {
     display: flex;
     gap: 24px;
 }
@@ -187,7 +201,7 @@ nav .link:focus {
 
 .our-team {
     background-color: #F4F4FD;
-    padding-bottom: 120px;
+    padding: 120px 0;
 }
 
 .our-team .container {
@@ -228,6 +242,7 @@ nav .link:focus {
     background-color: white;
     width: calc((100%-72px)/4);
     height: 380px;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .our-team .list {
@@ -238,6 +253,10 @@ nav .link:focus {
 
 .our-team .li-image {
     margin-bottom: 32px;
+}
+
+.our-team .team-member .container {
+    padding: 32px 0;
 }
 
 /* Our portfolio */
@@ -260,13 +279,15 @@ nav .link:focus {
 .portfolio ul {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 24px;
-    column-gap: 48px;
+    row-gap: 48px;
+    column-gap: 24px;
 }
 
-.portfolio ul li {
+.portfolio .ul-list .container {
     width: calc((100%-48px)/3);
-    padding-bottom: 32px;            
+    padding: 32px 16px;   
+    border: 1px solid #e7e9fc;
+    border-top: none;        
 }
 
 .portfolio .li-image {
@@ -320,7 +341,7 @@ nav .link:focus {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    display: block;
+    display: inline-block;
     margin-bottom: 16px;
 }
 
