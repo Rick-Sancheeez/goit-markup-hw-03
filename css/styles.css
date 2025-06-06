@@ -168,7 +168,7 @@ nav .link:focus {
 .qualities {
     padding: 120px 0;
 }
-.visually-hidden {
+.qualities .visually-hidden {
     display: none;
 }
 
@@ -292,6 +292,10 @@ nav .link:focus {
 
 .portfolio .li-image {
     margin-bottom: 32px;
+}
+
+.portfolio .list {                          /*        check  */
+    width: calc((100% - 48px) / 3);
 }
 
 .portfolio .title-third {
