@@ -45,6 +45,7 @@ header .container {
     padding: 0 15px;
     gap: 332px;
     justify-content: space-between;
+    width: 1158px;
 }
 
 .navigation-logo {
@@ -56,6 +57,7 @@ header .container {
     text-transform: uppercase;
     color: #4d5ae5;
     margin-right: 76px;
+    padding: 24px 0;
     
 }
 
@@ -168,7 +170,7 @@ nav .link:focus {
 /* section 2  Qualities  */
 
 .qualities {
-    padding: 120px 156px;
+    padding: 120px 0;
 }
 
 .visually-hidden {
@@ -208,11 +210,11 @@ nav .link:focus {
 .qualities ul li {
     width: calc((100% - 72px) / 4);
 }
-/* section "Our Team" */
+/* section 3 "Our Team" */
 
 .our-team {
     background-color: #F4F4FD;
-    padding: 120px 156px;
+    padding: 120px 0;
 }
 
 
@@ -252,6 +254,8 @@ nav .link:focus {
     width: 264px;
     height: 380px;
     border-radius: 0px 0px 4px 4px;
+    width: calc((100% - 72px) / 4);
+    
 }
 
 .our-team .list {
@@ -268,7 +272,7 @@ nav .link:focus {
 
 /* Our portfolio */
 .portfolio {
-    padding: 120px 156px;
+    padding: 120px 0;
 }
 
 .portfolio .title {
@@ -328,9 +332,7 @@ nav .link:focus {
 
 .foot {
     background-color: #2E2F42;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 156px;
+    padding: 100px 0;
     
 }
 
